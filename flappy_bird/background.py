@@ -2,4 +2,5 @@
 import tkinter as tk
 
 def set_background(canvas):
-    canvas.config(bg="green")  # Set the background to green
+    """Set the background color to red."""
+    canvas.config(bg='red')
