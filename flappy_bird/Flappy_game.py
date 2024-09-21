@@ -9,9 +9,9 @@ class FlappyBirdGame:
         self.canvas = tk.Canvas(self.root, width=400, height=600)
         self.canvas.pack()
 
-        set_background(self.canvas)  # Set background to green
+        set_background(self.canvas)  # Set background to red
 
-        self.bird = self.canvas.create_oval(50, 250, 90, 290, fill='yellow')
+        self.bird = self.canvas.create_oval(50, 250, 90, 290, fill='white')
         self.gravity = 3
         self.bird_speed = 0
         self.is_game_over = False
