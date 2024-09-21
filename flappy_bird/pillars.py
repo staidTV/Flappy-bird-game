@@ -10,8 +10,10 @@ class Pillars:
         self.gap_start = randint(100, 400)
 
         # Create top and bottom pipes
-        self.top_pipe = self.canvas.create_rectangle(x_position, 0, x_position + self.pipe_width, self.gap_start, fill="blue")
-        self.bottom_pipe = self.canvas.create_rectangle(x_position, self.gap_start + self.pipe_gap, x_position + self.pipe_width, 600, fill="blue")
+        self.top_pipe = self.canvas.create_rectangle(
+            x_position, 0, x_position + self.pipe_width, self.gap_start, fill="blue")
+        self.bottom_pipe = self.canvas.create_rectangle(
+            x_position, self.gap_start + self.pipe_gap, x_position + self.pipe_width, 600, fill="blue")
 
     def move(self):
         """Move the pipes to the left."""
